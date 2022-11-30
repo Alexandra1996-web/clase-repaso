@@ -37,6 +37,11 @@ print ('''>> Bienvenido a ADIVINA EL NUMERO!
 # Ciclo principal
 while True: 
     numero_ingresado = int(input("Ingrese un numero: "))
+
+    if (numero_ingresado > 10 or numero_ingresado < 0): 
+        print("El numero ingresado es invalido")
+        continue; 
+
     print("-------------------------------------------")
     
     # Si se adivino el numero, sale del ciclo
